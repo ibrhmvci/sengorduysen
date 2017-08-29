@@ -141,6 +141,7 @@ import dj_database_url
 if in_heroku:
     DATABASES = {'default': dj_database_url.config()}
     DEBUG = False
+    ALLOWED_HOSTS = ['www.sengorduysen.herokuapp.com']
 else:
     DATABASES = {
         'default': {
@@ -149,3 +150,4 @@ else:
         }
     }
     DEBUG = True
+    ALLOWED_HOSTS = []
