@@ -140,6 +140,7 @@ if 'DATABASE_URL' in os.environ:
 import dj_database_url
 if in_heroku:
     DATABASES = {'default': dj_database_url.config()}
+    DEBUG = False
 else:
     DATABASES = {
         'default': {
@@ -147,3 +148,4 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+    DEBUG = True
