@@ -1,0 +1,35 @@
+{% load static %}
+ <!-- HEADER BEGIN -->
+    <div class="container-fluid">
+        <div class="container header-container">
+            <div class="col-md-4 logo-container">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'img/logo.png' %}" alt="Logo" class="img-responsive">
+                </a>
+            </div>
+            {% if icons %}
+            <div class="col-md-8 social-con">
+                <ul class="list-inline pull-right social-list">
+                    {% for icon in icons %}
+                        {% if icon.title == 'facebook' %}
+                    <li class="sif"><a href="{{ icon.link }}" class="fa fa-facebook-official si"></a></li>
+                        {% endif %}
+                        {% if icon.title == 'twitter' %}
+                    <li class="sit"><a href="{{ icon.link }}" class="fa fa-twitter-square si "></a></li>
+                        {% endif %}
+                        {% if icon.title == 'instagram' %}
+                    <li class="sin"><a href="{{ icon.link }}" class="fa fa-instagram si"></a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            <div class="col-md-8 nav-container">
+                <ul class="list-inline pull-right nav-list">
+                    <li><a href="{% url 'haberler' %}" class="nav-item">HABERLER</a></li>
+                    <li><a href="{% url 'yazarlar' %}" class="nav-item">YAZARLAR</a></li>
+                    <li><a href="{% url 'blog' %}" class="nav-item">BLOG</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- HEADER END -->

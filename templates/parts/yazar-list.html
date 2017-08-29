@@ -1,0 +1,48 @@
+{% load static %}
+<!-- Yazarlar BEGIN -->
+<div class="container-fluid">
+    <div class="container">
+        {% if post_yazars %}
+            {% for post in post_yazars %}
+                {% if forloop.counter == 1 %}
+                    <div class="col-md-5 authors-image-con text-center">
+                        <img src="{{ post.Author.photo.url }}" alt="Haber1" class="img-circle">
+                        <div class="caption">{{ post.Author.name }}</div>
+                    </div>
+                    <div class="col-md-7 authors-content-con text-right">
+                        <div class="row">
+                            <div class="col-md-7 col-md-push-5">
+                                <h2>{{ post.title }}</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <p>
+                            {{ post.content|truncatewords:120 }}
+                        </p>
+                        <a href="{{ post.get_absolute_url }}">>>Devamı</a>
+                    </div>
+                {% endif %}
+                {% if forloop.counter == 1 %}
+                    <div class="col-md-7 authors-content-con text-left">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h2>{{ post.title }}</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <p>
+                            {{ post.content| truncatewords:250 }}
+                        </p>
+                        <a href="{{ post.get_absolute_url }}">>>Devamı</a>
+                    </div>
+                    <div class="col-md-5 authors-image-con text-center">
+                        <a href="#">
+                            <img src="{{ post.Author.photo.url }}" alt="Haber1" class="img-circle">
+                            <div class="caption">Julius Sezar</div>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>

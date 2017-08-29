@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800&subset=latin-ext");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-size: 14px; }
+
+body, html {
+  width: auto !important;
+  overflow-x: hidden !important; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:hover, a:focus, a:active, a:visited {
+  text-decoration: none !important; }
+
+*:focus {
+  outline: none; }
+
+a:hover {
+  cursor: pointer !important;
+  text-decoration: none !important; }
+
+.mainColor {
+  background: #09B3D6 !important; }
+
+.mainColor-t {
+  color: #09B3D6 !important; }
+
+.darkerColor {
+  background: #0288D1 !important; }
+
+.darkerColor-t {
+  color: #0288D1 !important; }
+
+.blackish {
+  background: #212121 !important; }
+
+.blackish-t {
+  color: #212121 !important; }
+
+.whiteish {
+  background: #ffffff !important; }
+
+.whiteish-t {
+  color: #ffffff !important; }
+
+.white {
+  background: #ffffff !important; }
+
+.white-t {
+  color: #ffffff !important; }
+
+a {
+  color: #212121; }
+
+body {
+  font-family: "Reem Kufi", sans-serif; }
+
+.no-padding {
+  padding: 0; }
+
+.header-container {
+  border-bottom: 3px solid #080808;
+  padding-top: 25px;
+  margin-bottom: 30px; }
+  .header-container .logo-container {
+    height: 120px; }
+  .header-container .social-con {
+    height: 50px;
+    margin-bottom: 10px; }
+    .header-container .social-con .social-list {
+      line-height: 50px; }
+      .header-container .social-con .social-list .si {
+        font-size: 1.625em;
+        line-height: 100%;
+        color: #09B3D6; }
+      .header-container .social-con .social-list .sif:hover {
+        background: #3b5998;
+        color: #fff;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .header-container .social-con .social-list .sif:hover .fa-facebook-official {
+        color: #fff;
+        transition: all ease .5s; }
+      .header-container .social-con .social-list .sit:hover {
+        background: #55acee;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .header-container .social-con .social-list .sit:hover .fa-twitter-square {
+        color: #fff;
+        transition: all ease .5s; }
+      .header-container .social-con .social-list .sin:hover {
+        background: #125688;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .header-container .social-con .social-list .sin:hover .fa-instagram {
+        color: #fff;
+        transition: all ease .5s; }
+  .header-container .nav-container {
+    height: 50px; }
+    .header-container .nav-container .nav-list {
+      line-height: 50px; }
+      .header-container .nav-container .nav-list .nav-item {
+        line-height: 100%;
+        font-family: "Reem Kufi", sans-serif;
+        font-size: 1.625em;
+        color: #212121;
+        font-weight: 400;
+        line-height: 1; }
+        .header-container .nav-container .nav-list .nav-item:active {
+          color: #09B3D6; }
+
+.active {
+  color: #09B3D6; }
+
+.banner-container {
+  padding: 0;
+  margin-bottom: 30px; }
+  .banner-container .big-banner {
+    padding: 0; }
+    .banner-container .big-banner a img {
+      padding-right: 50px; }
+  .banner-container .top-right-banner {
+    margin-bottom: 50px;
+    padding: 0; }
+    .banner-container .top-right-banner a img {
+      width: 100%;
+      height: auto; }
+  .banner-container .bottom-right-banner {
+    padding: 0; }
+    .banner-container .bottom-right-banner a img {
+      width: 100%;
+      height: auto; }
+
+.logo-carousel-container {
+  margin-bottom: 30px; }
+  .logo-carousel-container h1 {
+    margin-bottom: 20px; }
+
+.footer-container-fl {
+  height: 75px;
+  padding-top: 15px;
+  overflow-y: hidden; }
+  .footer-container-fl .brd {
+    padding-right: 10px;
+    border-right: 2px solid #fff; }
+  .footer-container-fl .footer-logo {
+    padding-left: 10px; }
+  .footer-container-fl .social-con {
+    height: 50px;
+    margin-bottom: 10px; }
+    .footer-container-fl .social-con .social-list {
+      line-height: 50px; }
+      .footer-container-fl .social-con .social-list .si {
+        font-size: 1.625em;
+        line-height: 100%;
+        color: #fff; }
+      .footer-container-fl .social-con .social-list .sif:hover {
+        background: #3b5998;
+        color: #fff;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .footer-container-fl .social-con .social-list .sif:hover .fa-facebook-official {
+        color: #fff;
+        transition: all ease .5s; }
+      .footer-container-fl .social-con .social-list .sit:hover {
+        background: #55acee;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .footer-container-fl .social-con .social-list .sit:hover .fa-twitter-square {
+        color: #fff;
+        transition: all ease .5s; }
+      .footer-container-fl .social-con .social-list .sin:hover {
+        background: #125688;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .footer-container-fl .social-con .social-list .sin:hover .fa-instagram {
+        color: #fff;
+        transition: all ease .5s; }
+
+.news-content-con {
+  margin-bottom: 40px; }
+  .news-content-con .row .col-md-7 h2 {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 2.5em;
+    color: #09B3D6;
+    font-weight: 400;
+    line-height: 1; }
+  .news-content-con p {
+    text-align: justify !important;
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 1.125em;
+    color: #212121;
+    font-weight: 200;
+    line-height: 1.4; }
+
+.news-image-con {
+  margin-bottom: 40px; }
+
+.authors-content-con {
+  margin-bottom: 50px;
+  padding: 30px; }
+  .authors-content-con .row .col-md-7 h2 {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 2.5em;
+    color: #09B3D6;
+    font-weight: 400;
+    line-height: 1; }
+  .authors-content-con p {
+    text-align: justify !important;
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 1.125em;
+    color: #212121;
+    font-weight: 200;
+    line-height: 1.4; }
+
+.authors-image-con {
+  margin-bottom: 30px;
+  padding: 30px; }
+  .authors-image-con img {
+    border: 4px solid #09B3D6; }
+
+.content-con {
+  margin-bottom: 100px; }
+  .content-con .content-text-con .content-title {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 1.875em;
+    color: #09B3D6;
+    font-weight: 400;
+    line-height: 1; }
+  .content-con .content-text-con .content-text {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 1.25em;
+    color: #212121;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: justify; }
+  .content-con .content-text-con span {
+    float: right; }
+
+/*# sourceMappingURL=main.css.map */

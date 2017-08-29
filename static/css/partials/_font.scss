@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+$font1: 'Reem Kufi', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900&subset=latin-ext');
+$font2: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800&subset=latin-ext');
+$font3:'Raleway', sans-serif;
+
+@mixin font-1($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: $font1;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+@mixin font-2($size: null, $colour: null, $weight: false,  $lh: null) {
+  font-family: $font2;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+@mixin font-3($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: $font3;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+// Pixel to Em convertion function
+$browser-context: 16; // Default html font size
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+// Responsive Font Size Dictionary... make changes if needed
+$p-font-sizes: (
+        null  : 13px,
+        480px : 9px,
+        768px : 13px,
+        1024px: 14px
+);
+$cat-font-sizes: (
+        null  : 14px,
+        425px : 14px,
+        480px : 14px,
+        768px : 14px,
+        1024px: 16px,
+        1440px: 17px,
+);
+$nav-font-sizes: (
+        null  : 14px,
+        480px : 9px,
+        768px : 19px,
+        1024px: 20px,
+        1440px: 20px,
+);
+// Responsive font size mixin usage = @include font-size($p-font-sizes);
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}

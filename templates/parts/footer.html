@@ -1,0 +1,26 @@
+{% load static %}
+ <footer class="container-fluid footer-container-fl mainColor">
+        <div class="container footer-container">
+          <div class="col-md-8 text-left">
+              <img src="{% static 'img/brd.png' %}" alt="None" class="brd">
+              <img src="{% static 'img/footer-logo.png' %}" alt="None" class="footer-logo">
+          </div>
+        {% if icons %}
+            <div class="col-md-4 social-con">
+                <ul class="list-inline pull-right social-list">
+                   {% for icon in icons %}
+                        {% if icon.title == 'facebook' %}
+                    <li class="sif"><a href="{{ icon.link }}" class="fa fa-facebook-official si"></a></li>
+                        {% endif %}
+                        {% if icon.title == 'twitter' %}
+                    <li class="sit"><a href="{{ icon.link }}" class="fa fa-twitter-square si "></a></li>
+                        {% endif %}
+                        {% if icon.title == 'instagram' %}
+                    <li class="sin"><a href="{{ icon.link }}" class="fa fa-instagram si"></a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        </div>
+    </footer>

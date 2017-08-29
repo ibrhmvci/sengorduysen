@@ -1,0 +1,39 @@
+//Firma Renk Paletleri
+$mainColor: #09B3D6;
+$darkerColor: #0288D1;
+$blackish: #212121;
+$whiteish: #ffffff;
+
+.mainColor{
+  background: $mainColor !important;
+}
+.mainColor-t{
+  color:$mainColor !important;
+}
+.darkerColor{
+  background: $darkerColor !important;
+}
+.darkerColor-t{
+  color:$darkerColor !important;
+}
+.blackish{
+  background: $blackish !important;
+}
+.blackish-t{
+  color:$blackish !important;
+}
+.whiteish{
+  background: $whiteish !important;
+}
+.whiteish-t{
+  color: $whiteish !important;
+}
+.white{
+  background: #ffffff !important;
+}
+.white-t{
+  color: #ffffff !important;
+}
+a{
+  color:$blackish;
+}

@@ -1,0 +1,54 @@
+{% load static %}
+<div class="container banner-container">
+        <!-- BIG BANNER BEGIN -->
+{% if sliders %}
+        <div class="col-md-8 big-banner">
+            <div class="owl-carousel owl-theme" id="main-slider">
+                {% for slider in sliders %}
+                    <div class="item">
+                        <a href="{{ slider.link1 }}">
+                            <img src="{{ slider.photo.url }}" alt="None" class="img-responsive">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+{% endif %}
+    <!-- BIG BANNER END -->
+        <!-- RIGHT BANNER BEGIN -->
+    {% if right_banner_tops %}
+        <div class="col-md-4 top-right-banner">
+            {% for banner in right_banner_tops %}
+                <a href="{{ banner.link1 }}">
+                    <img src="{{ banner.photo.url }}" alt="None" class="img-responsive">
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% if right_banner_bottoms %}
+        <div class="col-md-4 bottom-right-banner">
+            {% for banner in right_banner_bottoms %}
+                <a href="{{ banner.link1 }}">
+                    <img src="{{ banner.photo.url }}" alt="None" class="img-responsive">
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+    </div>
+
+    {% if logo_carousels %}
+        <!-- LOGO Carousel BEGIN -->
+        <div class="container no-padding text-center logo-carousel-container">
+            <h1>SPONSORLAR</h1>
+            <div class="owl-carousel owl-theme" id="logo-carousel">
+                {% for logo in logo_carousels %}
+                <div class="item">
+                    <a href="{{ logo.link1 }}">
+                        <img src="{{ logo.photo.url }}" alt="None">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}

@@ -1,0 +1,46 @@
+{% load static %}
+<!-- HABER LIST BEGIN -->
+{% if post_habers %}
+    <div class="container-fluid">
+        <div class="container">
+            {% for haber in post_habers %}
+                {% if forloop.counter == 1 %}
+                    <div class="col-md-5 news-image-con">
+                        <a href="{{ haber.slug }}">
+                            <img src="{{ haber.photo.url }}" alt="Haber1" class="img-responsive img-rounded">
+                        </a>
+                    </div>
+                    <div class="col-md-7 news-content-con text-right">
+                           <div class="row">
+                               <div class="col-md-7 col-md-push-5">
+                                   <h2>{{ haber.title }}</h2>
+                               </div>
+                           </div>
+                        <hr>
+                        <p>
+                            {{ haber.content }}
+                        </p>
+                    </div>
+                {% endif %}
+            {% if forloop.counter == 2 %}
+            <div class="col-md-7 news-content-con text-left">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>{{ haber.title }}</h2>
+                    </div>
+                </div>
+                <hr>
+                <p>
+                    {{ haber.content }}
+                </p>
+            </div>
+            <div class="col-md-5 news-image-con">
+                <a href="{{ haber.slug }}">
+                    <img src="{{ haber.photo.url }}" alt="Haber1">
+                </a>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+{% endif %}

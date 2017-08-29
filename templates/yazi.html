@@ -1,0 +1,17 @@
+{% extends  'base.html'%}
+
+{% block body %}
+    <div class="container content-con">
+        <div class="col-md-4 content-image-con">
+            <img src="{{ post.photo.url }}" alt="None" class="img-responsive content-image">
+        </div>
+        <div class="col-md-8 text-center content-text-con">
+            <h2 class="content-title">{{ post.title }}</h2><span class="content-aut-name">Yazar: {{ post.Author.name }}</span>
+            <hr>
+            <p class="content-text">
+                {{ post.content }}
+            </p>
+            <span>Oluşturulma Tarihi: {{ post.created_at }}</span>
+        </div>
+    </div>
+{% endblock %}
